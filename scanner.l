@@ -22,7 +22,7 @@ PUNC [:;,.\[\]\(\)\{\}]
 FUNCTION fclose|clearerr|feof|ferror|fflush|fgetpos|fopen|fread|freopen|fseek|fsetpos|ftell|fwrite|remove|rename|rewind|setbuf|setvbuf|tmpfile|tmpnam|fprintf|printf|sprintf|vfprintf|vprintf|vsprintf|fscanf|scanf|sscanf|fgetc|fgets|fputc|fputs|getc|getchar|gets|putc|putchar|puts|ungetc|perror
 KEY {FUNCTION}|void|int|double|bool|char|null|for|while|do|if|else|switch|return|break|continue|const|true|false|struct|case|default
 CONST {INT}|{DOUBLE}|{CHAR}|{STRING}|{SCI}
-ERR ({CONST}([ ]*{CONST})+)|({CONST}([ ]*{ID})+)|({ID}([ ]*{CONST})+)|(#[ ]*pragma.*)
+ERR ({CONST}({CONST})+)|({CONST}({ID})+)|({ID}({CONST})+)|(#[ ]*pragma.*)
 
 %x BIG_COMMENT
 %x ERROR
